@@ -2,7 +2,10 @@
   <div id="basicLayout">
     <a-layout style="min-height: 100vh">
       <a-layout-sider class="side" v-model:collapsed="collapsed" collapsible>
-        <div class="logo flex items-center justify-center bg-white/30 border-r border-gray-200" style="height: 64px">
+        <div
+          class="logo flex items-center justify-center bg-white/30 border-r border-gray-200"
+          style="height: 64px"
+        >
           <img src="../assets/logo.svg" alt="logo" class="h-1/2" />
         </div>
         <a-divider style="margin: 0" />
@@ -72,11 +75,5 @@ const $route = useRoute()
   background: linear-gradient(to right, #fefefe, #fff);
   margin-bottom: 28px;
   height: calc(100vh - 64px - 48px); /* 确保内容区域有明确的高度 */
-}
-
-.logo-divider {
-  height: 1px;
-  background: #e5e7eb; /* gray-200 */
-  width: 100%;
 }
 </style>
